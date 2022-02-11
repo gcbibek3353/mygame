@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AlienGame</title>
+    <style>
+        *{
+            margin: 0%;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .left{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 40vw;
+            height: 100vh;
+        }
+       
+        .left p,.right p{
+            z-index: 1;
+            background-color: aquamarine;
+            padding: 7px ;
+            border-radius: 10px;
+        }
+        .left p a ,.right p a{
+            text-decoration: none;
+            font-size: 24px;
+            color: black;
+        }
+        .left p:hover , .right p:hover{
+            opacity: 80%;
+            cursor: pointer;
+        }
+        .left  img{
+            position: absolute;
+            width: 30vw;
+            height: 90vh;
+        }
+        .left img:hover,.right img:hover{
+            opacity: 80%;
+        } 
+        .right{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 60vw;
+            height: 100vh;
+        }
+        .right p{
+            z-index: 1;
+        }
+        
+        .right img {
+            position: absolute;
+            width: 50vw;
+            height: 90vh;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="left">
+         <img src="singleplayer.jpg">
+            <p><a href="Singleplayer aliengame/index.html">  Play Singleplayer </a> </p>
+        </div>
+        <div class="right">
+            <img src="multiplayer.jpg">
+            <p><a href="multiplayer aliengame/index.html"> Play multiplayer </a> </p>
+        </div>
+    </div>
+</body>
+</html>

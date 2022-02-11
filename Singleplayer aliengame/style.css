@@ -1,0 +1,122 @@
+ *{
+    margin: 0%;
+    padding: 0%;
+}
+body{
+    background-color: #b9dfdf54;
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+.gamearea1{
+    position: absolute;
+    overflow: hidden;
+    width: 500px;
+    height: 100vh;
+    background-image: url('background.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-sizing: border-box;
+}
+.clickdiv{
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    height: 100px;
+    color: black;
+    cursor: pointer;
+    background: linear-gradient(blue, red);
+    border-radius: 30px;
+    padding: 5px;
+    font-size: 24px;
+}
+.clickdiv:hover{
+    color: white;
+}
+.result{
+    z-index: 1;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    color: black;
+    cursor: pointer;
+    background: linear-gradient(blue, red);
+    height: 100px;
+    border-radius: 30px;
+    padding: 5px;
+    font-size: 24px;
+}
+.result:hover{
+    color: white;
+} 
+
+.rocket{
+    position: absolute;
+    z-index: 1;
+    width: 100px;
+    height: 100px;
+    top: 450px;
+    left: 0px;
+}
+.rocketimg{
+    width: 100px;
+    height: 100px;
+}
+.alien{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100px;
+    height: 100px;
+    animation: alienmove 2s linear infinite;
+}
+@keyframes alienmove{
+    0%{
+        top: -10px;
+    }
+    100%{
+        top: 500px;
+    }
+}
+.alienimg{
+    width: 100px;
+    height: 70px;
+}
+
+.bullet{
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    animation: bulletmove 0.5s linear infinite;
+}
+@keyframes bulletmove{
+    0%{
+        top: 450px;
+    }
+    100%{
+        top:-10px;
+    }
+}
+.bulletimg{
+    margin: auto;
+    height: 100px;
+    width: 80px;
+}
+.score{
+    border: 2px solid red;
+    height: 20px;
+    width: 100px;
+    z-index: 1;
+    position: relative;
+    top: -300px;
+    left: -400px;
+}
+
+

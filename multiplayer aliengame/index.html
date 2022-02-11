@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AlienGame</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="gamearea1"></div>
+
+        <div class="startscreen">
+            <div class="ins1">
+                <h6>For Player 1</h6>
+                <p>A to move left</p>
+                <p>D to move right</p>
+                <p>W to fire</p>
+            </div>
+            <div class="clickdiv">
+                Click Here to start the game 
+            </div>
+            <div class="result" onclick="location.reload()">
+                <p id="winnertext"> </p>
+               <p> Click here to play again.</p>
+            </div>
+            <div class="ins2">
+                <h6>For Player 2</h6>
+                <p>ArrowLeft to move left</p>
+                <p>ArrowRight to move right</p>
+                <p>ArrowUp to fire</p>    
+            </div>
+        </div>
+
+        <div class="gamearea2"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
